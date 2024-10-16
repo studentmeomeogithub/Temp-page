@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.login-container {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 77vh;
+    width: 24vw;
+    background-color: #00000000;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.login-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #1a2525;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    height: 50%;
+}
+
+.top-section, .bottom-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.temperature-box, .humidity-box, .devices-box {
+    text-align: center;
+    width: 45%;
+    background-color: #3e3e3e;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.temperature-box h3, .humidity-box h3, .devices-box h3 {
+    font-size: 1.5rem;
+}
+
+.temperature-box p, .humidity-box p, .devices-box p {
+    font-size: 0.9rem;
+    color: #bfc747;
+}
+
+/* Update for 2x2 Grid Button Layout */
+.button-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.room-btn {
+    background-color: #260057;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.room-btn:hover {
+    background-color: #392d49;
+}
+
+.time-section {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.time-box {
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.time-box i {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.icons-section {
+    display: flex;
+    justify-content: space-around;
+    color: rgb(0, 0, 0);
+    margin-top: 10px;
+}
+
+.icons-section i {
+    font-size: 2rem;
+}
